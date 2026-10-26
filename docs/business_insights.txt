@@ -1,0 +1,22 @@
+Automated Business Insights:
+- Revenue decreased by 93.0% compared to the previous month.
+- UPI contributed 19.9% of all successful transactions.
+- Merchant 'Nykaa' generated the highest revenue (INR 4,131,633.04).
+- The overall transaction success rate is 85.4%.
+
+LLM Prompt Structure:
+
+    Act as a Senior Data Analyst at Razorpay. 
+    Analyze the following business insights and provide a 3-sentence executive summary for the CFO.
+    
+    Insights:
+    - Revenue decreased by 93.0% compared to the previous month.
+- UPI contributed 19.9% of all successful transactions.
+- Merchant 'Nykaa' generated the highest revenue (INR 4,131,633.04).
+- The overall transaction success rate is 85.4%.
+    
+    Format:
+    1. Financial Health Overview
+    2. Key Driver Identification
+    3. Actionable Recommendation
+    

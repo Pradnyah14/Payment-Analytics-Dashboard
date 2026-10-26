@@ -1,0 +1,46 @@
+-- DAX Measures for Payment Analytics Dashboard
+
+-- 1. Total Revenue
+Total Revenue = SUMX(FILTER(transactions, transactions[transaction_status] = "Success"), transactions[amount])
+
+-- 2. Transaction Count
+Transaction Count = COUNT(transactions[transaction_id])
+
+-- 3. Success Rate
+Success Rate = 
+DIVIDE(
+    CALCULATE([Transaction Count], transactions[transaction_status] = "Success"),
+    [Transaction Count],
+    0
+)
+
+-- 4. Failure Rate
+Failure Rate = 
+DIVIDE(
+    CALCULATE([Transaction Count], transactions[transaction_status] = "Failed"),
+    [Transaction Count],
+    0
+)
+
+-- 5. Average Transaction Value (ATV)
+Average Transaction Value = 
+DIVIDE(
+    [Total Revenue],
+    CALCULATE([Transaction Count], transactions[transaction_status] = "Success"),
+    0
+)
+
+-- 6. Monthly Revenue Growth %
+Monthly Growth % = 
+VAR CurrentMonthRevenue = [Total Revenue]
+VAR PreviousMonthRevenue = 
+    CALCULATE(
+        [Total Revenue],
+        DATEADD(transactions[date], -1, MONTH)
+    )
+RETURN
+    DIVIDE(
+        CurrentMonthRevenue - PreviousMonthRevenue,
+        PreviousMonthRevenue,
+        0
+    )
