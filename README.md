@@ -70,9 +70,6 @@ Finance teams often rely on manual reports that delay decision-making and increa
 
 ---
 
-## 👨‍💻 Recruitment Focus
-This project demonstrates skills highly relevant for data roles at companies like:
-- **Razorpay | PhonePe | Amazon | S&P Global | Visa**
 
 ---
 
@@ -85,5 +82,4 @@ This project demonstrates skills highly relevant for data roles at companies lik
 
 ---
 
-**Developed by [Your Name]**  
-*Senior Data Analyst Portfolio Project*
+**Developed by [Pradnya Hiremath]**  
