@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Analytics Dashboard Preview</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; margin: 0; padding: 20px; color: #333; }
+        .header { text-align: center; padding: 20px; background-color: #02042B; color: white; border-radius: 8px; margin-bottom: 30px; }
+        .dashboard-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 25px; max-width: 1200px; margin: 0 auto; }
+        .chart-card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; }
+        .chart-card img { max-width: 100%; height: auto; border-radius: 8px; }
+        .kpi-row { display: flex; justify-content: space-around; margin-bottom: 30px; flex-wrap: wrap; }
+        .kpi-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); min-width: 180px; text-align: center; margin: 10px; }
+        .kpi-value { font-size: 24px; font-weight: bold; color: #02042B; }
+        .kpi-label { font-size: 14px; color: #666; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Payment Analytics & Business Finance Dashboard</h1>
+        <p>Executive Performance Overview (Visualized Data)</p>
+    </div>
+
+    <div class="kpi-row">
+        <div class="kpi-card">
+            <div class="kpi-value">INR 35.15M</div>
+            <div class="kpi-label">Total Revenue</div>
+        </div>
+        <div class="kpi-card">
+            <div class="kpi-value">5,000</div>
+            <div class="kpi-label">Transactions</div>
+        </div>
+        <div class="kpi-card">
+            <div class="kpi-value">85.4%</div>
+            <div class="kpi-label">Success Rate</div>
+        </div>
+        <div class="kpi-card">
+            <div class="kpi-value">INR 8,233</div>
+            <div class="kpi-label">Avg. Value</div>
+        </div>
+    </div>
+
+    <div class="dashboard-grid">
+        <div class="chart-card">
+            <h3>Monthly Revenue Trend</h3>
+            <img src="docs/images/revenue_trend.png" alt="Revenue Trend">
+        </div>
+        <div class="chart-card">
+            <h3>Payment Method Breakdown</h3>
+            <img src="docs/images/payment_methods.png" alt="Payment Methods">
+        </div>
+        <div class="chart-card">
+            <h3>Top 10 Merchants</h3>
+            <img src="docs/images/top_merchants.png" alt="Top Merchants">
+        </div>
+        <div class="chart-card">
+            <h3>Status Analysis by Payment Type</h3>
+            <img src="docs/images/status_analysis.png" alt="Status Analysis">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,7 +1,7 @@
 Automated Business Insights:
-- Revenue decreased by 93.0% compared to the previous month.
+- Revenue decreased by 97.6% compared to the previous month.
 - UPI contributed 19.9% of all successful transactions.
-- Merchant 'Nykaa' generated the highest revenue (INR 4,131,633.04).
+- Merchant 'Zomato' generated the highest revenue (INR 3,996,203.65).
 - The overall transaction success rate is 85.4%.
 
 LLM Prompt Structure:
@@ -10,9 +10,9 @@ LLM Prompt Structure:
     Analyze the following business insights and provide a 3-sentence executive summary for the CFO.
     
     Insights:
-    - Revenue decreased by 93.0% compared to the previous month.
+    - Revenue decreased by 97.6% compared to the previous month.
 - UPI contributed 19.9% of all successful transactions.
-- Merchant 'Nykaa' generated the highest revenue (INR 4,131,633.04).
+- Merchant 'Zomato' generated the highest revenue (INR 3,996,203.65).
 - The overall transaction success rate is 85.4%.
     
     Format:
