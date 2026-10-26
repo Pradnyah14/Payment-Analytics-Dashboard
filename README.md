@@ -37,6 +37,18 @@ Finance teams often rely on manual reports that delay decision-making and increa
 
 ---
 
+## 📋 Dataset Information
+> **Note**: This project uses a synthetic transaction dataset created for educational and portfolio purposes. No real customer or financial information has been used.
+
+The dataset was designed to simulate real-world fintech transaction patterns including:
+- Merchant transactions
+- Payment methods
+- Revenue generation
+- Transaction success/failure behavior
+- Processing fees
+
+---
+
 ## 📈 Key Performance Indicators (KPIs)
 - **Total Revenue**: Sum of successful transaction amounts.
 - **Total Transactions**: Total count of transaction attempts.
